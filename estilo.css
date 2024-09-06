@@ -1,0 +1,21 @@
+body
+{
+    padding-left: 30em; 
+    padding-top: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label.cliente, label.cantidad
+{
+    padding-left: 55px;
+}
+
+label.producto, label.preUni, label.preTot
+{
+    padding-left: 9em;
+}
+
+input cantidad1
+{
+
+}
