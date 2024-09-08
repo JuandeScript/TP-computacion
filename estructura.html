@@ -2,9 +2,8 @@
 <html>
     <head>
         <title>Preusupuestos Mecatrónica</title>
-        <link rel = "stylesheet" href = "estilo.css">
-        <script src = "script.js"></script>
         
+         <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
         <div class = "container">
@@ -22,7 +21,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td><input type="number" class="cantidad" placeholder = "Ingrese cantidad"></td>
                             <td>
                                 <select class="producto">
                                     <option value="Producto 1">Producto 1</option>
@@ -37,11 +36,11 @@
                                     <option value="Producto 10">Producto 10</option>
                                 </select>
                             </td>
-                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="number" class="precioUnitario" placeholder="Ingrese precio"></td>
                             <td><input type="text" class="precioTotal" readonly></td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td><input type="number" class="cantidad" placeholder = "Ingrese cantidad"></td>
                             <td>
                                 <select class="producto">
                                     <option value="Producto 1">Producto 1</option>
@@ -56,11 +55,11 @@
                                     <option value="Producto 10">Producto 10</option>
                                 </select>
                             </td>
-                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="number" class="precioUnitario" placeholder="Ingrese precio"></td>
                             <td><input type="text" class="precioTotal" readonly></td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td><input type="number" class="cantidad" placeholder = "Ingrese cantidad"></td>
                             <td>
                                 <select class="producto">
                                     <option value="Producto 1">Producto 1</option>
@@ -75,11 +74,11 @@
                                     <option value="Producto 10">Producto 10</option>
                                 </select>
                             </td>
-                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="number" class="precioUnitario" placeholder="Ingrese precio"></td>
                             <td><input type="text" class="precioTotal" readonly></td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td><input type="number" class="cantidad" placeholder = "Ingrese cantidad"></td>
                             <td>
                                 <select class="producto">
                                     <option value="Producto 1">Producto 1</option>
@@ -94,11 +93,11 @@
                                     <option value="Producto 10">Producto 10</option>
                                 </select>
                             </td>
-                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="number" class="precioUnitario"  placeholder="Ingrese precio"></td>
                             <td><input type="text" class="precioTotal" readonly></td>
                         </tr>
                         <tr>
-                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td><input type="number" class="cantidad" placeholder = "Ingrese cantidad"></td>
                             <td>
                                 <select class="producto">
                                     <option value="Producto 1">Producto 1</option>
@@ -113,7 +112,7 @@
                                     <option value="Producto 10">Producto 10</option>
                                 </select>
                             </td>
-                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="number" class="precioUnitario" placeholder="Ingrese precio"></td>
                             <td><input type="text" class="precioTotal" readonly></td>
                         </tr>
                     </tbody>
@@ -127,7 +126,10 @@
                 <!-- Botones -->
                 <button type="button" id="calcularTotal">Calcular Total</button>
                 <button type="button" id="imprimirPresupuesto">Imprimir Presupuesto</button>
+                <button type="button" id="exportarPDF">Exportar a PDF</button>
             </form>
         </div>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
 </html>
