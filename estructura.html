@@ -3,113 +3,43 @@
     <head>
         <title>Preusupuestos Mecatrónica</title>
         <link rel = "stylesheet" href = "estilo.css">
+        <script src = "script.js"></script>
     </head>
     <body>
-
-        <label class = "cliente">Cliente: </label>
-        <input type = "text" id = "cliente" name = "cliente" class = "cliente"><br><br>
-        <label class = "cantidad">Cantidad </label>
-        <label class = "producto">Producto </label>
-        <label class = "preUni">Precio Unitario </label>
-        <label class = "preTot">Precio total</label><br><br>
-        <input type = "number" id = "cantidad1" name = "cantidad1" class = "cantidad">
-        <div class = "dropdown">
-            <input type = "prod1" id = "producto1" name = "producto1" class = "producto">
-            <div class = "dropdown-content">
-                <input type = "button" value = "Producto1" class = "opcion"><br>
-                <input type = "button" value = "Producto2" class = "opcion"><br>
-                <input type = "button" value = "Producto3" class = "opcion"><br>
-                <input type = "button" value = "Producto4" class = "opcion"><br>
-                <input type = "button" value = "Producto5" class = "opcion"><br>
-                <input type = "button" value = "Producto6" class = "opcion"><br>
-                <input type = "button" value = "Producto7" class = "opcion"><br>
-                <input type = "button" value = "Producto8" class = "opcion"><br>
-                <input type = "button" value = "Producto9" class = "opcion"><br>
-                <input type = "button" value = "Producto10" class = "opcion">
-            </div>
+        <div class = "container">
+            <label for = "cliente">Cliente: </label>
+            <input type = "text" id = "cliente" name = "cliente" placeholder = "Nombre y apellido"><br><br>
+            <table id = "tablaProductos">
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Producto</th>
+                        <th>Precio Unitario</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                        <td><input type="number" class="cantidad" min="1" value="1"></td>
+                        <td>
+                            <select class="producto">
+                                <option value="Producto 1">Producto 1</option>
+                                <option value="Producto 2">Producto 2</option>
+                                <option value="Producto 3">Producto 3</option>
+                                <option value="Producto 4">Producto 4</option>
+                                <option value="Producto 5">Producto 5</option>
+                                <option value="Producto 6">Producto 6</option>
+                                <option value="Producto 7">Producto 7</option>
+                                <option value="Producto 8">Producto 8</option>
+                                <option value="Producto 9">Producto 9</option>
+                                <option value="Producto 10">Producto 10</option>
+                            </select>
+                        </td>
+                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                        <td><input type="text" class="precioTotal" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <input type = "number" id = "preUni1" name = "preUni1" class = "precio"><br><br>
-        <input type = "number" id = "cantidad2" name = "cantidad2" class = "cantidad">
-        <div class = "dropdown">
-            <input type = "prod2" id = "producto1" name = "producto1" class = "producto">
-            <div class = "dropdown-content">
-                <input type = "button" value = "Producto1" class = "opcion"><br>
-                <input type = "button" value = "Producto2" class = "opcion"><br>
-                <input type = "button" value = "Producto3" class = "opcion"><br>
-                <input type = "button" value = "Producto4" class = "opcion"><br>
-                <input type = "button" value = "Producto5" class = "opcion"><br>
-                <input type = "button" value = "Producto6" class = "opcion"><br>
-                <input type = "button" value = "Producto7" class = "opcion"><br>
-                <input type = "button" value = "Producto8" class = "opcion"><br>
-                <input type = "button" value = "Producto9" class = "opcion"><br>
-                <input type = "button" value = "Producto10" class = "opcion">
-            </div>
-        </div>
-        <input type = "number" id = "preUni2" name = "preUni2" class = "precio"><br><br>
-        <input type = "number" id = "cantidad3" name = "cantidad3" class = "cantidad">
-        <div class = "dropdown">
-            <input type = "prod3" id = "producto1" name = "producto1" class = "producto">
-            <div class = "dropdown-content">
-                <input type = "button" value = "Producto1" class = "opcion"><br>
-                <input type = "button" value = "Producto2" class = "opcion"><br>
-                <input type = "button" value = "Producto3" class = "opcion"><br>
-                <input type = "button" value = "Producto4" class = "opcion"><br>
-                <input type = "button" value = "Producto5" class = "opcion"><br>
-                <input type = "button" value = "Producto6" class = "opcion"><br>
-                <input type = "button" value = "Producto7" class = "opcion"><br>
-                <input type = "button" value = "Producto8" class = "opcion"><br>
-                <input type = "button" value = "Producto9" class = "opcion"><br>
-                <input type = "button" value = "Producto10" class = "opcion">
-            </div>
-        </div>
-        <input type = "number" id = "preUni3" name = "preUni3" class = "precio"><br><br>
-        <input type = "number" id = "cantidad4" name = "cantidad4" class = "cantidad">
-        <div class = "dropdown">
-            <input type = "prod4" id = "producto1" name = "producto1" class = "producto">
-            <div class = "dropdown-content">
-                <input type = "button" value = "Producto1" class = "opcion"><br>
-                <input type = "button" value = "Producto2" class = "opcion"><br>
-                <input type = "button" value = "Producto3" class = "opcion"><br>
-                <input type = "button" value = "Producto4" class = "opcion"><br>
-                <input type = "button" value = "Producto5" class = "opcion"><br>
-                <input type = "button" value = "Producto6" class = "opcion"><br>
-                <input type = "button" value = "Producto7" class = "opcion"><br>
-                <input type = "button" value = "Producto8" class = "opcion"><br>
-                <input type = "button" value = "Producto9" class = "opcion"><br>
-                <input type = "button" value = "Producto10" class = "opcion">
-            </div>
-        </div>
-        <input type = "number" id = "preUni4" name = "preUni4" class = "precio"><br><br>
-        <input type = "number" id = "cantidad5" name = "cantidad5" class = "cantidad">
-        <div class = "dropdown">
-            <input type = "prod5" id = "producto1" name = "producto1" class = "producto">
-            <div class = "dropdown-content">
-                <input type = "button" value = "Producto1" class = "opcion"><br>
-                <input type = "button" value = "Producto2" class = "opcion"><br>
-                <input type = "button" value = "Producto3" class = "opcion"><br>
-                <input type = "button" value = "Producto4" class = "opcion"><br>
-                <input type = "button" value = "Producto5" class = "opcion"><br>
-                <input type = "button" value = "Producto6" class = "opcion"><br>
-                <input type = "button" value = "Producto7" class = "opcion"><br>
-                <input type = "button" value = "Producto8" class = "opcion"><br>
-                <input type = "button" value = "Producto9" class = "opcion"><br>
-                <input type = "button" value = "Producto10" class = "opcion">
-            </div>
-        </div>
-        <input type = "number" id = "preUni5" name = "preUni5" class = "precio"><br><br>
-        <p>Valor de Cuota Ahora 12 - Sin Interés</p>
-        <p id = "valA12"> $$$</p>
-        <p>Valor de Cuota Ahora 18 - 35% Interés </p>
-        <p id = "valA18"> $$$</p>
-        <input type = "button" id = "but1" value = "Calcular Total" onclick = "calcularTotal();">
-        <input type = "button" id = "but1" value = "Imprimir Presupuesto" onclick = "imprimir();">
-        <p>Subtotal</p>
-        <p id = "valSubTot">$$$</p>
-        <p>IVA</p>
-        <p id = "valIva">$$$</p>
-        <p>Total</p>
-        <p id = "valTot">$$$</p>
-
     </body>
-
 </html>
