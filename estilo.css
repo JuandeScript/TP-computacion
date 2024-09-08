@@ -2,20 +2,51 @@ body
 {
     padding-left: 30em; 
     padding-top: 5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgray;
 }
 
-label.cliente, label.cantidad
+label.cantidad, label.cliente
 {
-    padding-left: 55px;
+    padding-left: 60px;
 }
 
-label.producto, label.preUni, label.preTot
+label.producto
 {
-    padding-left: 9em;
+    padding-left: 140px;
 }
 
-input cantidad1
+label.preUni, label.preTot
 {
+    padding-left: 135px;
+}
 
+input.cliente
+{
+    width: fit-content;
+}
+
+input.producto
+{
+    width: 18em
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 245px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
 }
