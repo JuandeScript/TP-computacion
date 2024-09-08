@@ -1,58 +1,56 @@
+*
+{
+    box-sizing: border-box;
+}
+
 body
 {
-    padding-left: 30em; 
-    padding-top: 5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-label.cantidad, label.cliente
+.container
 {
-    padding-left: 60px;
-}
-
-label.producto
-{
-    padding-left: 140px;
-}
-
-label.preUni, label.preTot
-{
-    padding-left: 135px;
-}
-
-input.cliente
-{
-    width: fit-content;
-}
-
-input.producto
-{
-    width: 18em
-}
-
-.dropdown
-{
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content
-{
-    display: none;
-    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
     background-color: white;
-    width: 245px;
-    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown:hover .dropdown-content
+form
 {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+label, table
+{
+    width: 100%;
     display: block;
 }
 
-.opcion
+#cliente
 {
-    position: absolute;
-    width: 245px
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }

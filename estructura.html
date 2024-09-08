@@ -8,115 +8,126 @@
     </head>
     <body>
         <div class = "container">
-            <label for = "cliente">Cliente: </label>
-            <input type = "text" id = "cliente" name = "cliente" placeholder = "Nombre y apellido"><br><br>
-            <table id = "tablaProductos">
-                <thead>
-                    <tr>
-                        <th>Cantidad</th>
-                        <th>Producto</th>
-                        <th>Precio Unitario</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="number" class="cantidad" min="1" value="1"></td>
-                        <td>
-                            <select class="producto">
-                                <option value="Producto 1">Producto 1</option>
-                                <option value="Producto 2">Producto 2</option>
-                                <option value="Producto 3">Producto 3</option>
-                                <option value="Producto 4">Producto 4</option>
-                                <option value="Producto 5">Producto 5</option>
-                                <option value="Producto 6">Producto 6</option>
-                                <option value="Producto 7">Producto 7</option>
-                                <option value="Producto 8">Producto 8</option>
-                                <option value="Producto 9">Producto 9</option>
-                                <option value="Producto 10">Producto 10</option>
-                            </select>
-                        </td>
-                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
-                        <td><input type="text" class="precioTotal" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="cantidad" min="1" value="1"></td>
-                        <td>
-                            <select class="producto">
-                                <option value="Producto 1">Producto 1</option>
-                                <option value="Producto 2">Producto 2</option>
-                                <option value="Producto 3">Producto 3</option>
-                                <option value="Producto 4">Producto 4</option>
-                                <option value="Producto 5">Producto 5</option>
-                                <option value="Producto 6">Producto 6</option>
-                                <option value="Producto 7">Producto 7</option>
-                                <option value="Producto 8">Producto 8</option>
-                                <option value="Producto 9">Producto 9</option>
-                                <option value="Producto 10">Producto 10</option>
-                            </select>
-                        </td>
-                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
-                        <td><input type="text" class="precioTotal" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="cantidad" min="1" value="1"></td>
-                        <td>
-                            <select class="producto">
-                                <option value="Producto 1">Producto 1</option>
-                                <option value="Producto 2">Producto 2</option>
-                                <option value="Producto 3">Producto 3</option>
-                                <option value="Producto 4">Producto 4</option>
-                                <option value="Producto 5">Producto 5</option>
-                                <option value="Producto 6">Producto 6</option>
-                                <option value="Producto 7">Producto 7</option>
-                                <option value="Producto 8">Producto 8</option>
-                                <option value="Producto 9">Producto 9</option>
-                                <option value="Producto 10">Producto 10</option>
-                            </select>
-                        </td>
-                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
-                        <td><input type="text" class="precioTotal" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="cantidad" min="1" value="1"></td>
-                        <td>
-                            <select class="producto">
-                                <option value="Producto 1">Producto 1</option>
-                                <option value="Producto 2">Producto 2</option>
-                                <option value="Producto 3">Producto 3</option>
-                                <option value="Producto 4">Producto 4</option>
-                                <option value="Producto 5">Producto 5</option>
-                                <option value="Producto 6">Producto 6</option>
-                                <option value="Producto 7">Producto 7</option>
-                                <option value="Producto 8">Producto 8</option>
-                                <option value="Producto 9">Producto 9</option>
-                                <option value="Producto 10">Producto 10</option>
-                            </select>
-                        </td>
-                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
-                        <td><input type="text" class="precioTotal" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" class="cantidad" min="1" value="1"></td>
-                        <td>
-                            <select class="producto">
-                                <option value="Producto 1">Producto 1</option>
-                                <option value="Producto 2">Producto 2</option>
-                                <option value="Producto 3">Producto 3</option>
-                                <option value="Producto 4">Producto 4</option>
-                                <option value="Producto 5">Producto 5</option>
-                                <option value="Producto 6">Producto 6</option>
-                                <option value="Producto 7">Producto 7</option>
-                                <option value="Producto 8">Producto 8</option>
-                                <option value="Producto 9">Producto 9</option>
-                                <option value="Producto 10">Producto 10</option>
-                            </select>
-                        </td>
-                        <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
-                        <td><input type="text" class="precioTotal" readonly></td>
-                    </tr>
-                </tbody>
-            </table>
+            <form id = "formPresupuesto">
+                <label for = "cliente">Cliente: </label>
+                <input type = "text" id = "cliente" name = "cliente" placeholder = "Nombre y apellido"><br><br>
+                <table id = "tablaProductos">
+                    <thead>
+                        <tr>
+                            <th>Cantidad</th>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td>
+                                <select class="producto">
+                                    <option value="Producto 1">Producto 1</option>
+                                    <option value="Producto 2">Producto 2</option>
+                                    <option value="Producto 3">Producto 3</option>
+                                    <option value="Producto 4">Producto 4</option>
+                                    <option value="Producto 5">Producto 5</option>
+                                    <option value="Producto 6">Producto 6</option>
+                                    <option value="Producto 7">Producto 7</option>
+                                    <option value="Producto 8">Producto 8</option>
+                                    <option value="Producto 9">Producto 9</option>
+                                    <option value="Producto 10">Producto 10</option>
+                                </select>
+                            </td>
+                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="text" class="precioTotal" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td>
+                                <select class="producto">
+                                    <option value="Producto 1">Producto 1</option>
+                                    <option value="Producto 2">Producto 2</option>
+                                    <option value="Producto 3">Producto 3</option>
+                                    <option value="Producto 4">Producto 4</option>
+                                    <option value="Producto 5">Producto 5</option>
+                                    <option value="Producto 6">Producto 6</option>
+                                    <option value="Producto 7">Producto 7</option>
+                                    <option value="Producto 8">Producto 8</option>
+                                    <option value="Producto 9">Producto 9</option>
+                                    <option value="Producto 10">Producto 10</option>
+                                </select>
+                            </td>
+                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="text" class="precioTotal" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td>
+                                <select class="producto">
+                                    <option value="Producto 1">Producto 1</option>
+                                    <option value="Producto 2">Producto 2</option>
+                                    <option value="Producto 3">Producto 3</option>
+                                    <option value="Producto 4">Producto 4</option>
+                                    <option value="Producto 5">Producto 5</option>
+                                    <option value="Producto 6">Producto 6</option>
+                                    <option value="Producto 7">Producto 7</option>
+                                    <option value="Producto 8">Producto 8</option>
+                                    <option value="Producto 9">Producto 9</option>
+                                    <option value="Producto 10">Producto 10</option>
+                                </select>
+                            </td>
+                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="text" class="precioTotal" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td>
+                                <select class="producto">
+                                    <option value="Producto 1">Producto 1</option>
+                                    <option value="Producto 2">Producto 2</option>
+                                    <option value="Producto 3">Producto 3</option>
+                                    <option value="Producto 4">Producto 4</option>
+                                    <option value="Producto 5">Producto 5</option>
+                                    <option value="Producto 6">Producto 6</option>
+                                    <option value="Producto 7">Producto 7</option>
+                                    <option value="Producto 8">Producto 8</option>
+                                    <option value="Producto 9">Producto 9</option>
+                                    <option value="Producto 10">Producto 10</option>
+                                </select>
+                            </td>
+                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="text" class="precioTotal" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><input type="number" class="cantidad" min="1" value="1"></td>
+                            <td>
+                                <select class="producto">
+                                    <option value="Producto 1">Producto 1</option>
+                                    <option value="Producto 2">Producto 2</option>
+                                    <option value="Producto 3">Producto 3</option>
+                                    <option value="Producto 4">Producto 4</option>
+                                    <option value="Producto 5">Producto 5</option>
+                                    <option value="Producto 6">Producto 6</option>
+                                    <option value="Producto 7">Producto 7</option>
+                                    <option value="Producto 8">Producto 8</option>
+                                    <option value="Producto 9">Producto 9</option>
+                                    <option value="Producto 10">Producto 10</option>
+                                </select>
+                            </td>
+                            <td><input type="number" class="precioUnitario" value="0" placeholder="Ingrese precio"></td>
+                            <td><input type="text" class="precioTotal" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Valor de Cuota Ahora 12 (Sin Interés): $<span id="totalAhora12">0</span></p>
+                <p>Valor Ahora 18 (35% de Interés): $<span id="totalAhora18">0</span></p>
+                <p>Subtotal: $<span id="subtotal">0</span></p>
+                <p>IVA (21%): $<span id="iva">0</span></p>
+                <p>Total: $<span id="total">0</span></p><br>
+
+                <!-- Botones -->
+                <button type="button" id="calcularTotal">Calcular Total</button>
+                <button type="button" id="imprimirPresupuesto">Imprimir Presupuesto</button>
+            </form>
         </div>
     </body>
 </html>
