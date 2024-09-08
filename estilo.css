@@ -50,3 +50,9 @@ input.producto
 {
     display: block;
 }
+
+.opcion
+{
+    position: absolute;
+    width: 245px
+}
