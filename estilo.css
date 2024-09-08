@@ -8,16 +8,17 @@ body
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .container
 {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 50px;
+    padding-left: 75px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px black;
 }
 
 form
@@ -27,10 +28,13 @@ form
     padding: 20px;
 }
 
-label, table
+table
 {
     width: 100%;
     display: block;
+    padding-left: 320px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 #cliente
@@ -41,16 +45,26 @@ label, table
     font-size: 16px;
 }
 
-table
-{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
 th, td
 {
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 10px;
     text-align: center;
+}
+
+p
+{
+    padding-left: 320px;
+}
+
+button
+{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
 }
