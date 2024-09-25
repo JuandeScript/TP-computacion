@@ -6,65 +6,97 @@
 body
 {
     font-family: Arial, sans-serif;
+    font-size: 15px;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #000;
 }
 
 .container
 {
     width: 80%;
-    margin: 0 auto;
-    padding: 50px;
-    padding-left: 75px;
-    background-color: white;
-    box-shadow: 0 0 10px black;
+    padding: 5em;
+    margin: auto;
+    background-color: #d88;
 }
 
 form
 {
-    display: block;
-    width: 100%;
-    padding: 20px;
+    padding: 5em;
+    margin: auto;
 }
 
 table
 {
-    width: 100%;
-    display: block;
-    padding-left: 320px;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    background-color: #f18888;
+    margin: 1em;
 }
 
 #cliente
 {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
+    border-radius: 0.66em;
+    width: 85%;
+    padding: 0.66em;
+    font-size: 1em;
 }
 
 th, td
 {
-    border: 1px solid white;
-    padding: 10px;
+    background-color: #f70;
+    border: 1px solid #000;
+    border-radius: 0.33em;
+    padding: 0.66em;
     text-align: center;
 }
 
 p
 {
-    padding-left: 320px;
+    color: #000;
+    padding-left: 7.5em;
 }
 
 button
 {
+    font-weight: bold;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: lightgray;
-    color: black;
+    padding: 0.66em 1.33em;
+    background-color: #fff;
+    color: #000;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    margin: 10px 5px;
+    font-size: 1em;
+    margin: 0.66em 0.33em;
+    border-radius: 0.66em;
+}
+
+.prod{
+    margin: 0.66em 1.33em;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.tabla{
+    border-radius: 0.66em;
+    margin: 0;
+    font-size: 1em;
+    text-align:center;
+    background-color: #000;
+}
+
+label{
+    color: #000;
+}
+
+input{
+    background-color: #f70;
+    color: #000;
+}
+
+.prod, .producto{
+    background-color: #f70;
+    color: #000;
+}
+
+.cliente{
+    background-color: #fff;
 }
